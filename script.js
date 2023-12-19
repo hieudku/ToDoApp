@@ -1,5 +1,4 @@
-import { compareAsc, format } from './node_modules/date-fns';
-import * as DOM from './DOMStuff';
+import * as DOM from "./DOMStuff.js";
 
 class Project {
     constructor (projectName) {
@@ -17,4 +16,4 @@ class Task {
     }
 }
 
-DOM.addProject();
+console.log(DOM.x);
