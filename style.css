@@ -6,7 +6,7 @@ html {
     font-size: 18px;
 }
 h1 {
-    background-color: #f7e9e9;
+    background-color: #eff4f5;
     margin: 0;
     min-height: 4rem;
     text-align: center;
@@ -26,9 +26,11 @@ body {
 main {
     display: flex;
 }
+
+
 aside {
     min-width: 12rem;
-    background-color: #ebeaea;
+    background-color: #ebf0ec;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,6 +38,12 @@ aside {
 #addProjectBtn {
     margin-top: 3rem;
 }
+#addProjectDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+
 #content {
     display: flex;
     flex-direction: column;
