@@ -16,4 +16,8 @@ class Task {
     }
 }
 
-console.log(DOM.x);
+
+let myProject = new Project();
+
+myProject = DOM.addProject();
+DOM.appendProject

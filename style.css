@@ -29,20 +29,35 @@ main {
 
 
 aside {
-    min-width: 12rem;
+    min-width: 15rem;
     background-color: #ebf0ec;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    gap: 1rem;
 }
 #addProjectBtn {
-    margin-top: 3rem;
+    max-width: 6rem;
+    margin-bottom: 2rem;
 }
 #addProjectDiv {
+    gap: 1rem;
     display: flex;
     flex-direction: column;
 }
-
+.projectCards {
+    background-color: #83c991;
+    width: auto;
+    height: 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
 
 #content {
     display: flex;
