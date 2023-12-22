@@ -25,13 +25,13 @@ function createProjectFunc() {
 }
 
 function createTasks() {
-    const projectCards = document.querySelectorAll(".projectCards");
+    const projectCards = document.getElementsByClassName("projectCards");
     const showTasks = document.getElementById("content");
 
     projectCards.forEach(card => {
         card.addEventListener("click", () => {
-
-            console.log("register");
+            
+            
         })
     })
 
