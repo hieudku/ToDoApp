@@ -4,7 +4,6 @@ const ProjectList = [];
 const TaskList = [];
 
 const createProject = createProjectFunc();
-const createTask = createTasks();
 
 function createProjectFunc() {
     // Add a project button
@@ -16,6 +15,8 @@ function createProjectFunc() {
             event.preventDefault();
             let displayProject = DOM.addAProject(toMyProject, showProject);
 
+            createTasks();
+
             ProjectList.push(displayProject);
             console.log(createProject);
             console.log(ProjectList);
@@ -24,13 +25,12 @@ function createProjectFunc() {
 }
 
 function createTasks() {
-    let projectCards = document.querySelectorAll(".projectCards");
+    const projectItems = document.getElementsByClassName("projectCards");
     const showTasks = document.getElementById("content");
 
-    projectCards.forEach(card => {
-        card.addEventListener("click", event => {
-            event.preventDefault();
-            
+    Array.from(projectItems).forEach(card => {
+        card.addEventListener("click", () => {
+            alert("success");
         })
     })
 
