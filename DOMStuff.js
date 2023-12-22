@@ -6,6 +6,7 @@ export class Project {
     constructor (projectName) {
         this.projectName = projectName;
     }
+    
 }
 
 
@@ -18,39 +19,30 @@ export class Task {
     }
 }
 
-//Create and display new Project elements function
+// **1** Create and display new Project elements function
 export function addAProject(toMyProject, showProject) {
 
-        //Create a new project element
-        const projectItem = document.createElement("div");
-        projectItem.setAttribute("class", "projectCards");
-        showProject.append(projectItem); 
-        projectItem.textContent = toMyProject.value;
-        const getPrjName = projectItem.textContent
+    //Create a new project element
+    const projectItem = document.createElement("div");
+    projectItem.setAttribute("class", "projectCards");
+    showProject.append(projectItem); 
+    projectItem.textContent = toMyProject.value;
+    const getPrjName = projectItem.textContent
     
-        projectData.push(getPrjName);
+    projectData.push(getPrjName);
         
-        return getPrjName;
+    return getPrjName;
 }
 
-export function addTask(projectCards) {
-        const projectItem = document.getElementsByClassName("projectCards");
-        
-                /*
-                const newTask = new Task();
-                showTasks.createElement("input");
-                showTasks.setAttribute("type", "text", "class", "taskItem");
-                displayTask.appendChild();
-                console.log("success");
-                */
-
+// **2** Manipulate project card and tasks properties.
+export function addTask(projItem, showTasks, selected) {
+    projItem.style.backgroundColor = "#83c991";
+    showTasks.style.display = "flex";
 }
 
-function createTaskDiv(projectData) {
-    const displayTask = document. getElementById("content");
-    const clickAddTask = document.getElementById("addProjectBtn");
-    clickAddTask.addEventListener("click", () => {
-
-    })
-    displayTask
+// **3** Add, create and display each tasks when submitted
+export function displayTasks(displayTask, taskItem, getTask) {
+    taskItem.setAttribute("class", "taskCard");
+    taskItem.textContent = getTask.value;
+    displayTask.appendChild(taskItem);
 }

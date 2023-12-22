@@ -14,6 +14,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
+h2 {
+    margin-top: 2rem;
+}
 header {
     padding: 0;
 }
@@ -49,7 +52,7 @@ aside {
     flex-direction: column;
 }
 .projectCards {
-    background-color: #83c991;
+    background-color: #9FC7CD;
     width: auto;
     height: 2rem;
     display: flex;
@@ -66,4 +69,7 @@ aside {
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
+}
+#addTaskBtn {
+    margin-top: 1rem;
 }
