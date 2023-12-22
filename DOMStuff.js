@@ -27,14 +27,15 @@ export function addAProject(toMyProject, showProject) {
         showProject.append(projectItem); 
         projectItem.textContent = toMyProject.value;
         const getPrjName = projectItem.textContent
-
+    
         projectData.push(getPrjName);
         
         return getPrjName;
 }
 
 export function addTask(projectCards) {
-
+        const projectItem = document.getElementsByClassName("projectCards");
+        
                 /*
                 const newTask = new Task();
                 showTasks.createElement("input");

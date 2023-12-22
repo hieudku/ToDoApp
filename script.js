@@ -1,12 +1,11 @@
 import * as DOM from "./DOMStuff.js";
 
 const ProjectList = [];
-const TaskList = {
+const TaskList = [];
 
-    taskName: DOM.addTask()
-}
 const createProject = createProjectFunc();
-const selectProject = createTasks();
+const createTask = createTasks();
+
 function createProjectFunc() {
     // Add a project button
     const clickAddProject = document.getElementById("addProjectBtn");
@@ -25,12 +24,12 @@ function createProjectFunc() {
 }
 
 function createTasks() {
-    const projectCards = document.getElementsByClassName("projectCards");
+    let projectCards = document.querySelectorAll(".projectCards");
     const showTasks = document.getElementById("content");
 
     projectCards.forEach(card => {
-        card.addEventListener("click", () => {
-            
+        card.addEventListener("click", event => {
+            event.preventDefault();
             
         })
     })
