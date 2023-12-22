@@ -1,15 +1,26 @@
-import {Project, Task} from "./script.js";
+
 
 export const projectData = [];
 
+export class Project {
+    constructor (projectName) {
+        this.projectName = projectName;
+    }
+}
+
+
+export class Task {
+    constructor (taskName, taskDesc, taskPriority, taskDue) {
+        this.taskName = taskName;
+        this.taskDesc = taskDesc;
+        this.taskPriority = taskPriority;
+        this.taskDue = taskDue;
+    }
+}
+
 //Create and display new Project elements function
-export function addProject() {
-    const clickAddProject = document.getElementById("addProjectBtn");
-    const toMyProject = document.getElementById("addProj");
-    const showProject = document.getElementById("asideBar");
-    
-    clickAddProject.addEventListener("click", event => {
-        event.preventDefault();
+export function addAProject(toMyProject, showProject) {
+
 
         //Create a new project element
         const projectItem = document.createElement("div");
@@ -20,8 +31,7 @@ export function addProject() {
 
         projectData.push(getPrjName);
         console.log(projectData);
-        return getPrjName;
-    });
+   
 }
 
 export function addTask() {
