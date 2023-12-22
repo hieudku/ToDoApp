@@ -6,9 +6,7 @@ export class Project {
     constructor (projectName) {
         this.projectName = projectName;
     }
-    
 }
-
 
 export class Task {
     constructor (taskName, taskDesc, taskPriority, taskDue) {

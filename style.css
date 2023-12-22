@@ -9,7 +9,8 @@ h1 {
     background-color: #eff4f5;
     margin: 0;
     min-height: 4rem;
-    text-align: center;
+    text-align: left;
+    padding-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +19,9 @@ h2 {
     margin-top: 2rem;
 }
 header {
+    z-index: 999;
     padding: 0;
+    filter: drop-shadow(-4px 2px 6px #99b7b9);
 }
 body {
     padding: 0;
@@ -41,10 +44,22 @@ aside {
     padding-right: 1rem;
     padding-top: 1rem;
     gap: 1rem;
+    filter: drop-shadow(-1px 13px 10px #879597);
 }
 #addProjectBtn {
+    border: solid 1px #6fa9b1;
+    background-color: #a7dae1;
+    border-radius: 6px;
     max-width: 6rem;
     margin-bottom: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+#addProjectBtn:hover {
+    background-color: #70a7b0;
+    transition: ease-in-out 0.2s;
+
 }
 #addProjectDiv {
     gap: 1rem;
@@ -61,6 +76,8 @@ aside {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     cursor: pointer;
+    border-radius: 10px;
+
 }
 
 #content {
@@ -72,4 +89,22 @@ aside {
 }
 #addTaskBtn {
     margin-top: 1rem;
+    border: solid 1px #6fa9b1;
+    background-color: #a7dae1;
+    border-radius: 6px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
 }
+#addTaskBtn:hover {
+    background-color: #70a7b0;
+    transition: ease-in-out 0.2s;
+}
+.taskCard {
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 20rem;
+    min-width: 10rem;
+    background-color: #def1f4;
+    filter: drop-shadow(0px 5px 3px #b9c9cb);}
