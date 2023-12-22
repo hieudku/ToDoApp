@@ -62,7 +62,7 @@ aside {
 
 #content {
     width: 100vw;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;

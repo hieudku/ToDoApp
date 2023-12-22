@@ -21,7 +21,6 @@ export class Task {
 //Create and display new Project elements function
 export function addAProject(toMyProject, showProject) {
 
-
         //Create a new project element
         const projectItem = document.createElement("div");
         projectItem.setAttribute("class", "projectCards");
@@ -30,24 +29,19 @@ export function addAProject(toMyProject, showProject) {
         const getPrjName = projectItem.textContent
 
         projectData.push(getPrjName);
-        console.log(projectData);
-   
+        
+        return getPrjName;
 }
 
-export function addTask() {
-    const projectCards = document.getElementsByClassName("projectCards");
-    const displayTask = document. getElementById("content");
-    const showTasks = document.getElementById("content");
-        Array.from(projectCards).forEach(card => {
-            card.addEventListener("click", () => {
+export function addTask(projectCards) {
 
+                /*
                 const newTask = new Task();
                 showTasks.createElement("input");
                 showTasks.setAttribute("type", "text", "class", "taskItem");
                 displayTask.appendChild();
                 console.log("success");
-            });
-        })
+                */
 
 }
 
